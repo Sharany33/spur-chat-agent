@@ -47,7 +47,7 @@ export async function generateReply(
 
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+     model: "gpt-4o-mini",
       messages,
       max_tokens: 200,
       temperature: 0.4

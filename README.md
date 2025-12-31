@@ -150,6 +150,10 @@ Health check endpoint.
 - Includes FAQ knowledge (shipping, returns, refunds, support hours)
 - Returns friendly fallback messages when LLM is unavailable
 
+> **Note:** The deployed demo uses a real OpenAI API key. If the API quota is exhausted at review time, the application returns a graceful fallback message instead of failing silently.  
+> The full end-to-end chat experience works locally (and in production) with any valid OpenAI API key that has active billing enabled.
+
+
 ## 🖥️ Frontend
 - **Location**: `frontend/src/App.tsx`
 - **State Management**: Messages, session, input state
