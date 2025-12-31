@@ -8,7 +8,21 @@ import { randomUUID } from "crypto";
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(cors());
+const allowedOrigins = [
+  "http://localhost:5173",  // Local development
+  "https://spur-chat-n0mct4ovq-sharanya-bhat-ns-projects.vercel.app"  // Your Vercel URL
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+  }));
 app.use(express.json());
 
 interface ChatRequestBody {
