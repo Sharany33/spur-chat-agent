@@ -232,7 +232,7 @@ export const App: React.FC = () => {
         <main className="site-main">
           {/* Left side: marketing / context */}
           <section className="hero-section">
-            
+
             <h1 className="hero-title">
               Spur Support Agent
               <span className="title-accent">(Demo)</span>
@@ -249,7 +249,7 @@ export const App: React.FC = () => {
 
             <div className="hero-highlights">
               <div className="hero-card">
-                
+
                 <h3>What you can ask</h3>
                 <ul>
                   <li onClick={() => setInput("What is your return policy?")}>
@@ -275,15 +275,15 @@ export const App: React.FC = () => {
                     <span className="avatar-icon">🤖</span>
                   </div>
                   <div>
-                   <h2>Spur Store Support</h2>
-      <div className="chat-session-info">
-        <span>Web Chat</span>
-        <span className="divider">•</span>
-        <span>Session #{sessionId ? sessionId.substring(0, 4).toUpperCase() : 'NEW'}</span>
-       
-      </div>
-    </div>
-  </div>
+                    <h2>Spur Store Support</h2>
+                    <div className="chat-session-info">
+                      <span>Web Chat</span>
+                      <span className="divider">•</span>
+                      <span>Session #{sessionId ? sessionId.substring(0, 4).toUpperCase() : 'NEW'}</span>
+
+                    </div>
+                  </div>
+                </div>
 
                 <div className="header-actions">
                   <div className="chat-history-container">
@@ -309,9 +309,8 @@ export const App: React.FC = () => {
                         {chatSessions.map((session) => (
                           <div
                             key={`${session.id}-${session.timestamp}`}
-                            className={`chat-history-item ${
-                              session.id === sessionId ? "active" : ""
-                            }`}
+                            className={`chat-history-item ${session.id === sessionId ? "active" : ""
+                              }`}
                             onClick={() => handleChatHistoryClick(session)}
                           >
                             <div className="chat-preview">
@@ -341,17 +340,16 @@ export const App: React.FC = () => {
                     <div className="empty-state">
                       <div className="empty-icon">👋</div>
                       <p className="empty-title">Hi, How can we help today?</p>
-                      
-                      
+
+
                     </div>
                   )}
 
                   {messages.map((m, idx) => (
                     <div
                       key={idx}
-                      className={`message-row ${
-                        m.sender === "user" ? "from-user" : "from-ai"
-                      }`}
+                      className={`message-row ${m.sender === "user" ? "from-user" : "from-ai"
+                        }`}
                     >
                       <div className="avatar">
                         {m.sender === "user" ? "👤" : "🤖"}
@@ -429,7 +427,7 @@ export const App: React.FC = () => {
         <footer className="site-footer">
           <div className="footer-content">
             <span>© {new Date().getFullYear()} Spur — AI Chat Agent</span>
-           
+
           </div>
         </footer>
       </div>

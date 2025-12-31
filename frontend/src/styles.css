@@ -35,7 +35,7 @@ body {
   border-radius: 32px;
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(148, 163, 184, 0.2);
-  box-shadow: 
+  box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.05),
     0 40px 80px rgba(0, 0, 0, 0.4);
   display: flex;
@@ -86,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 
+  box-shadow:
     0 0 0 1px rgba(99, 102, 241, 0.5),
     0 8px 24px rgba(99, 102, 241, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -148,9 +148,12 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
@@ -293,7 +296,7 @@ body {
   border-radius: 24px;
   background: rgba(15, 23, 42, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.2);
-  box-shadow: 
+  box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08),
     0 24px 60px rgba(0, 0, 0, 0.7);
   overflow: hidden;
@@ -326,7 +329,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 
+  box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.2),
     0 8px 24px rgba(59, 130, 246, 0.4);
 }
@@ -418,6 +421,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -519,12 +523,16 @@ body {
 }
 
 @keyframes wave {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(20deg);
   }
+
   75% {
     transform: rotate(-20deg);
   }
@@ -556,6 +564,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -649,9 +658,12 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-4px);
   }
@@ -781,11 +793,11 @@ body {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .hero-section {
     order: 1;
   }
-  
+
   .chat-section {
     order: 2;
   }
@@ -795,23 +807,23 @@ body {
   .app-root {
     padding: 16px;
   }
-  
+
   .site-shell {
     border-radius: 20px;
   }
-  
+
   .site-main {
     padding: 20px;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .title-accent {
     font-size: 1.5rem;
   }
-  
+
   .chat-container {
     max-height: 600px;
   }
@@ -822,13 +834,13 @@ body {
     padding: 16px 20px;
     flex-wrap: wrap;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 8px;
     text-align: center;
   }
-  
+
   .bubble {
     max-width: 85%;
   }

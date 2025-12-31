@@ -16,8 +16,8 @@ The focus of this project is correctness, clarity, and realistic product behavio
 
 ## 🌐 Live Demo
 
-- **Frontend (Chat UI)**: https://spur-chat-n0mct4ovq-sharanya-bhat-ns-projects.vercel.app
-- **Backend API**: https://spur-chat-backend-1g5s.onrender.com
+- **Frontend (Chat UI)**: https://spur-chat-agent-seven.vercel.app/
+- **Backend API**: https://spur-chat-backend-xky0.onrender.com/
 
 > Note: The backend may take a few seconds to respond on first request due to cold start on Render.
 
